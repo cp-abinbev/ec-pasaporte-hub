@@ -1,0 +1,35 @@
+@import url('../../../../../../main.css');
+
+.card {
+  @apply h-48 overflow-hidden min-h-[150px] md:max-w-[360px] border border-solid border-[#9d9d9d] rounded-[5px];
+}
+
+.card .card__image {
+  @apply w-full object-cover;
+  height: calc(100% - 50px);
+}
+
+.card .card__info {
+  @apply flex items-center justify-between h-[50px];
+}
+
+.card .card__info .promocontainer {
+  @apply w-full h-full pt-0 px-[13px];
+}
+
+.card .card__info .promologo {
+  @apply flex justify-center items-center h-full;
+  width: calc(100% - 85%);
+}
+
+.card .card__info .promocontainer .promocontainer__title {
+  @apply font-futuraII  text-3xl py-1 uppercase;
+}
+
+.card .card__info .promocontainer .promocontainer__date {
+  @apply font-montserrat text-xs py-1;
+}
+
+.card .card__info .promocontainer .promocontainer__date .promocontainer__date__strong {
+  @apply font-bold;
+}

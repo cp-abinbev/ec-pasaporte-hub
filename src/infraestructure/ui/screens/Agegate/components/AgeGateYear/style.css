@@ -1,0 +1,17 @@
+@import url('../../../../../../main.css');
+
+.formyear {
+  @apply flex flex-col;
+}
+
+.formyear .formyear__button {
+  @apply flex justify-center  h-10  opacity-40 rounded-[5px];
+}
+
+.formyear .formyear__button .formyear__button__button {
+  @apply font-futuraII text-3xl;
+}
+
+.formyear__year {
+  @apply mt-3 mb-8 h-14 flex justify-center items-center;
+}

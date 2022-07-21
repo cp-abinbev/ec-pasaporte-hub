@@ -1,0 +1,9 @@
+@import url('../../../../../../main.css');
+
+.result {
+  @apply px-5 pt-3 md:px-10 lg:px-20;
+}
+
+.result .result__title {
+  @apply font-bold font-montserrat text-link;
+}

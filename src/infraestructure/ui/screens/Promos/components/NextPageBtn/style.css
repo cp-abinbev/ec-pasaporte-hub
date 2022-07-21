@@ -1,0 +1,9 @@
+@import url('../../../../../../main.css');
+
+.nextpagebtn {
+  @apply flex items-center justify-center w-full pt-5 pb-5;
+}
+
+.nextpagebtn .nextpagebtn__text {
+  @apply font-montserrat underline font-bold text-[14px] cursor-pointer;
+}

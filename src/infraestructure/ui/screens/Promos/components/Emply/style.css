@@ -1,0 +1,9 @@
+@import url('../../../../../../main.css');
+
+.emplyresponse {
+  @apply w-full px-5 pt-5 pb-7 font-montserrat md:px-10 lg:px-20 flex flex-col justify-center items-center min-h-[50vh];
+}
+
+.emplyresponse .emplyresponse__paragraph {
+  @apply text-center;
+}

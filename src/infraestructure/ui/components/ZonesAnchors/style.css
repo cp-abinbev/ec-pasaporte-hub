@@ -1,0 +1,6 @@
+@import url('../../../../main.css');
+
+.anchors {
+  @apply text-link;
+  display: none;
+}

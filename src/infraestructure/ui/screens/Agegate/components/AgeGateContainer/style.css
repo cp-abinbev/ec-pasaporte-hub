@@ -1,0 +1,17 @@
+@import url('../../../../../../main.css');
+
+.agegatecontainer {
+  @apply flex flex-col items-center md:w-1/2 md:px-2 text-black;
+}
+
+.agegatecontainer .logo {
+  @apply w-[150px] py-3 mb-6 md:hidden;
+}
+
+.agegatecontainer .question {
+  @apply uppercase mt-5 mb-5 text-center text-4xl font-extrabold  font-futuraII w-full;
+}
+
+.agegatecontainer .text {
+  @apply text-center text-link  font-montserrat leading-5 mb-5 w-full tracking-wider;
+}

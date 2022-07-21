@@ -1,0 +1,13 @@
+@import url('../../../../../../main.css');
+
+.formyearmonthdate__container {
+  @apply flex justify-between items-center mt-4 mb-8 lg:w-[500px];
+}
+
+.formyearmonthdate .formyearmonthdate__button {
+  @apply flex justify-center h-10  opacity-40 md:w-[70%] md:m-auto rounded-[5px];
+}
+
+.formyearmonthdate .formyearmonthdate__button .formyearmonthdate__button__button {
+  @apply font-futuraII text-3xl;
+}

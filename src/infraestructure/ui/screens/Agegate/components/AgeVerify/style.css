@@ -1,0 +1,59 @@
+@import url('../../../../../../main.css');
+
+.contentInputsYear {
+  @apply h-[100%] w-[100%]  flex items-center justify-center;
+}
+
+.contentInputsYear > .active input,
+input:focus {
+  @apply border-b-2 border-solid border-primary;
+}
+
+.contentInputsMont {
+  @apply h-[100%] w-[100%]  flex items-center justify-center;
+}
+
+.contentInputsMont > .active input,
+input:focus {
+  @apply border-b-2 border-solid border-primary;
+}
+
+.contentInputsDay {
+  @apply h-[100%] w-[100%]  flex items-center justify-center;
+}
+
+.contentInputsDay > .active input,
+input:focus {
+  @apply border-b-2 border-solid border-primary;
+}
+
+.input-age {
+  @apply mx-2 outline-none border-b-2 border-solid border-black;
+  border-radius: 5px 5px 0px 0px;
+  width: 50px !important;
+  height: 3rem;
+  background-color: #ebebeb;
+}
+
+.input-age::placeholder {
+  color: black;
+}
+
+.input-year-month-date {
+  @apply mx-1 outline-none border-b-2 border-solid border-black;
+  border-radius: 5px 5px 0px 0px;
+  width: 30px !important;
+  height: 2rem;
+  background-color: #ebebeb;
+}
+
+@media (min-width: 600px) {
+  .input-year-month-date {
+    width: 50px !important;
+    height: 3rem;
+  }
+}
+
+.input-year-month-date::placeholder {
+  color: black;
+}

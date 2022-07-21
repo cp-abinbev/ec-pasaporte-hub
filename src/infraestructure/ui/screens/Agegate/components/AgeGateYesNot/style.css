@@ -1,0 +1,13 @@
+@import url('../../../../../../main.css');
+
+.formyesnot {
+  @apply flex flex-col items-center mt-5;
+}
+
+.formyesnot .formyesnot__buttons {
+  @apply flex justify-between;
+}
+
+.formyesnot .formyesnot__buttons .formyesnot__buttons__button {
+  @apply w-20 h-10  mx-4  font-futuraII font-bold mb-5 rounded-[5px];
+}

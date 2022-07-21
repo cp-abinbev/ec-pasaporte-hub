@@ -1,0 +1,5 @@
+@import url('../../../../../../main.css');
+
+.autocompleteview__li {
+  @apply flex items-center justify-start;
+}

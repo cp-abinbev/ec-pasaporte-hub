@@ -1,0 +1,13 @@
+@import url('../../../../../../main.css');
+
+.intruction {
+  @apply px-5 py-3  md:px-10 lg:px-20 font-montserrat;
+}
+
+.intruction .intruction__title {
+  @apply py-2 font-bold font-montserrat;
+}
+
+.intruction .intruction__subtitle {
+  @apply pb-2 font-montserrat text-xl leading-[18px];
+}

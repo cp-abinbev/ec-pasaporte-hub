@@ -1,0 +1,9 @@
+@import url('../../../../main.css');
+
+.primarybtn {
+  @apply flex justify-center  h-10  opacity-40 rounded-[5px] z-[100];
+}
+
+.primarybtn .primarybtn__button {
+  @apply font-futuraII text-3xl uppercase w-full;
+}

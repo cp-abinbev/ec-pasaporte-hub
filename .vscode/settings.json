@@ -1,0 +1,22 @@
+{
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 140,
+    "cSpell.userWords": [
+        "scrollable"
+    ],
+    "diffEditor.ignoreTrimWhitespace": true,
+    "cSpell.enabled": true,
+    "cSpell.language": "en,es",
+    "svgPreview.style": {
+        "html": {
+            "background-position": "0 0, 13px 13px",
+            "background-size": "26px 26px",
+            "background-image": "linear-gradient(45deg, #141414 25%, transparent 25%, transparent 75%, #141414 75%, #141414), linear-gradient(45deg, #141414 25%, transparent 25%, transparent 75%, #141414 75%, #141414)"
+        }
+    },
+    "workbench.startupEditor": "none",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "cSpell.words": [
+        "revísalo"
+    ]
+}

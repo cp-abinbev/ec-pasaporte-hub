@@ -1,0 +1,73 @@
+@import url('../../../../main.css');
+
+.footer {
+  @apply pt-5  font-montserrat border-t-[3px] border-solid border-black;
+}
+
+.footer__nav {
+  @apply px-1 lg:px-5;
+}
+
+.footer .footer__nav .footer__nav__wrapper {
+  @apply flex flex-col lg:flex-row lg:justify-between;
+}
+
+.footer .footer__nav .footer__nav__list {
+  @apply flex flex-col items-center mb-5 lg:flex-row lg:mb-2;
+}
+
+.footer .footer__nav .footer__nav__list .item {
+  @apply my-1 lg:mr-3;
+}
+
+.footer .footer__nav__list .item .item__option {
+  @apply font-extrabold underline  text-sm xsm:text-link;
+}
+
+.footer .footer__nav .footer__nav__network {
+  @apply flex flex-col items-center mb-5 lg:flex-row lg:items-center lg:mb-2 lg:text-sm;
+}
+
+.footer .footer__nav .footer__nav__network .title {
+  @apply font-extrabold text-sm  xsm:text-link mb-3 lg:mb-0 lg:mr-1 lg:uppercase md:font-extrabold;
+}
+
+.footer .footer__nav .footer__nav__network .list {
+  @apply flex;
+}
+
+.footer .footer__nav .footer__nav__network .list .list__item {
+  @apply my-1 mx-1;
+}
+
+.footer .footer__nav .footer__nav__network .list .list__item .list__item__img {
+  @apply w-6 h-6;
+}
+
+.footer .footer__nav .footer__nav__warning {
+  @apply flex flex-col items-center mb-1 lg:flex-row lg:justify-between;
+}
+
+.footer .footer__nav .footer__nav__warning .wrapper {
+  @apply lg:flex;
+}
+
+.footer .footer__nav .footer__nav__warning .wrapper .wrapper__subtitle {
+  @apply font-extrabold  text-center text-xs xsm:text-sm mb-1 lg:pr-3;
+}
+
+.footer .footer__nav .footer__nav__warning .list {
+  @apply flex;
+}
+
+.footer .footer__nav .footer__nav__warning .list .list__item {
+  @apply my-3 mx-1;
+}
+
+.footer .footer__nav .footer__nav__warning .list .list__item__img {
+  @apply w-6 h-6;
+}
+
+.footer .footer__nav__bottom {
+  @apply h-8 text-white flex justify-center items-center text-link text-[10px];
+}

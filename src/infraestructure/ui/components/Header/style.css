@@ -1,0 +1,13 @@
+@import url('../../../../main.css');
+
+.header {
+  @apply flex items-center px-5 h-[72px] border-b-[3px] border-solid border-black;
+}
+
+.header .header__logo {
+  @apply w-[110px];
+}
+
+.header .header__back {
+  @apply w-[50px];
+}
