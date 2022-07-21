@@ -1,0 +1,5 @@
+@import url('../../../../../../main.css');
+
+.locationcontainer {
+  @apply m-auto max-w-[350px] relative z-[100];
+}

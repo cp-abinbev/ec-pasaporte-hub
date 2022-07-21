@@ -1,0 +1,29 @@
+@import url('../../../../main.css');
+
+.error {
+  @apply flex justify-between;
+}
+
+.error .error__left {
+  @apply hidden lg:w-[50%] lg:flex justify-center items-center;
+}
+
+.error .error__left .error__left__logo {
+  @apply w-[150px];
+}
+
+.error .error__errorboundary {
+  @apply px-5 min-h-[80vh] w-[100%] flex flex-col items-center justify-center lg:w-[50%];
+}
+
+.error .error__errorboundary .error__errorboundary__error {
+  @apply font-futuraII uppercase my-8 text-4xl;
+}
+
+.error .error__errorboundary .error__errorboundary__message {
+  @apply font-montserrat mb-28 text-link tracking-[2px];
+}
+
+.error .error__errorboundary .error__errorboundary__button {
+  @apply min-w-[300px] font-futuraII text-3xl uppercase py-3 rounded-[5px];
+}

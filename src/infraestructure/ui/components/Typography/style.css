@@ -1,0 +1,5 @@
+@import url('../../../../main.css');
+
+.typography {
+  @apply text-[black] font-bold text-[14px];
+}

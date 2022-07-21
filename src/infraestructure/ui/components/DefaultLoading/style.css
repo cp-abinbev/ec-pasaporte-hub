@@ -1,0 +1,21 @@
+@import url('../../../../main.css');
+
+.loading {
+  @apply flex flex-col justify-center items-center h-screen w-screen bg-white;
+}
+
+.loading .loading__containertitle {
+  @apply hidden justify-center items-center bg-primary w-[150px] h-[50px];
+}
+
+.loading .loading__containertitle .loading__containertitle__title {
+  @apply text-blue font-futuraII text-[22px];
+}
+
+.loading .loading__subtitle {
+  @apply text-xl my-14 font-montserrat font-extrabold text-blue text-center leading-6;
+}
+
+.loading .loading__spinner {
+  @apply animate-spin;
+}

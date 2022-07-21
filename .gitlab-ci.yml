@@ -1,0 +1,94 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  S3_BUCKET_NAME_DEV: "ec-pasaporte-vacunacion2-web-dev.serempre.dev"
+  S3_BUCKET_NAME_PROD: "NOT_SET"
+  DISTRIBUTION_ID_PROD: "NOT_SET"
+
+stages:
+  - build
+  - deploy
+
+build all:
+  image: node:12
+  stage: build
+  before_script:
+    - export NODE_OPTIONS="--max-old-space-size=2048"
+    - npm install --progress=false
+  script:
+    - npm run build
+  tags:
+    - serempre
+    - docker
+  except:
+    - dev
+    - main
+
+build dev:
+  image: node:12
+  stage: build
+  before_script:
+    - export NODE_OPTIONS="--max-old-space-size=2048"
+    - npm install --progress=false
+  script:
+    - npm run build
+  tags:
+    - serempre
+    - docker
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - build
+  only:
+    - dev
+
+build prod:
+  image: node:12
+  stage: build
+  before_script:
+    - export NODE_OPTIONS="--max-old-space-size=2048"
+    - npm install --progress=false
+  script:
+    - npm run build-prod
+  tags:
+    - serempre
+    - docker
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - build
+  only:
+    - main
+
+deploy dev:
+  image: python:latest
+  stage: deploy
+  script:
+    - pip install awscli
+    - aws s3 rm s3://$S3_BUCKET_NAME_DEV --recursive
+    - aws s3 cp ./build/ s3://$S3_BUCKET_NAME_DEV/ --recursive --include "*" --exclude ".*" --acl public-read
+  tags:
+    - serempre
+    - docker
+  environment:
+    name: dev
+    url: https://ec-pasaporte-vacunacion2-web-dev.serempre.dev/
+    
+  only:
+    - dev
+
+deploy prod:
+  image: python:latest
+  stage: deploy
+  script:
+    - pip install awscli
+    - aws s3 rm s3://$S3_BUCKET_NAME_PROD --recursive
+    - aws s3 cp ./build/ s3://$S3_BUCKET_NAME_PROD/ --recursive --include "*" --exclude ".*" --acl public-read --expires "$(date -d '+1 months' --utc +'%Y-%m-%dT%H:%M:%SZ')"
+    - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID_PROD --paths '/*'
+  tags:
+    - serempre
+    - docker
+  environment:
+    name: production
+    url: NOT_SET
+  only:
+    - main

@@ -1,0 +1,5 @@
+@import url('../../../../main.css');
+
+.component-spinner {
+  @apply w-full px-5 pt-5 pb-7 md:px-10 lg:px-20 flex justify-center items-center min-h-[50vh] animate-spin;
+}

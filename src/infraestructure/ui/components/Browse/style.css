@@ -1,0 +1,38 @@
+@import url('../../../../main.css');
+
+.browse-results {
+    @apply list-none font-montserrat font-normal text-link;
+}
+
+.browse-results > li {
+    @apply p-[15px] flex items-center leading-5 cursor-pointer;
+}
+
+.browse-results > li > a {
+  @apply inline-block w-full;
+}
+
+.browse-results > li:not(:last-child) {
+    @apply border-b-[2px] border-solid border-gray;
+}
+
+.browse-results > li p {
+    @apply p-0 m-0 inline-block align-middle text-black;
+}
+
+.browse-results > li p.alt-text {
+    @apply font-bold text-blue;
+}
+
+.browse-results > li p > span {
+    @apply font-[100];
+}
+
+.browse-icon {
+    @apply inline-block align-middle w-auto h-[26px] mr-4;
+}
+
+.has-scrollable-items {
+	box-shadow: 0px -25px 15px -19px rgb(0 0 0 / 20%) inset;
+	border-radius: 5px;
+}

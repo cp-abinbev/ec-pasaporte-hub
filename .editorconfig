@@ -1,0 +1,31 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+
+# Matches multiple files with brace expansion notation
+# Set default charset
+[src/**.{js,jsx}]
+indent_style = tab
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[src/**.{css,scss}]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Matches the exact files either package.json or .travis.yml
+[{package.json,.travis.yml,tailwind.config.js}]
+indent_style = space
+indent_size = 2

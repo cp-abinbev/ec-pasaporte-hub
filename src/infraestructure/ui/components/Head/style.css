@@ -1,0 +1,13 @@
+@import url('../../../../main.css');
+
+.head {
+  @apply relative px-5 py-5 md:px-10 lg:px-20 md:pt-20 z-[100];
+}
+
+.head .head__title {
+  @apply font-futuraII uppercase text-4xl pb-5;
+}
+
+.head .head__description {
+  @apply font-montserrat text-xl leading-[18px];
+}

@@ -1,0 +1,21 @@
+@import url('../../../../main.css');
+
+.layoutcontainer {
+  @apply relative min-h-[50vh] px-5 pt-20 pb-10 md:p-0 md:flex md:h-[88vh];
+}
+
+.layoutcontainer__phone {
+  @apply pt-5 md:p-0;
+}
+
+.layoutcontainer .layoutcontainer__mobile {
+  @apply h-full md:w-1/2 md:flex md:items-center md:justify-center;
+}
+
+.layoutcontainer .layoutcontainer__desk {
+  @apply w-1/2 hidden md:flex md:w-1/2  md:justify-center md:items-center;
+}
+
+.layoutcontainer .layoutcontainer__desk .logo {
+  @apply w-[150px] py-3 mb-6;
+}

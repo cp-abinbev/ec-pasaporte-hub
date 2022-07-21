@@ -1,0 +1,19 @@
+@import url('../../../../../../main.css');
+
+.map {
+  @apply absolute w-full left-0 h-[75%] top-[25%] z-0 md:w-[50%] md:left-[50%] md:h-[100%] md:top-[0];
+}
+
+.map .map__picker {
+  @apply absolute z-[100] w-[50px] h-[50px] flex justify-center items-center;
+  left: calc(50% - 25px);
+  top: calc(50% - 25px);
+}
+
+.map .map__container {
+  @apply h-full w-full relative;
+}
+
+.map .map__button {
+  @apply absolute z-[100] w-full max-w-[350px] left-0 right-0 m-auto bottom-12 px-[15px];
+}

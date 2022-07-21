@@ -1,0 +1,94 @@
+{
+  "name": "promo-hub-maz",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@googlemaps/js-api-loader": "^1.14.1",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.26.1",
+    "date-fns": "^2.28.0",
+    "env-cmd": "^10.1.0",
+    "google-map-react": "^2.1.10",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.8.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-gtm-module": "^2.0.11",
+    "react-helmet": "^6.1.0",
+    "react-otp-input": "^2.4.0",
+    "react-redux": "^8.0.1",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "redux": "^4.2.0",
+    "redux-immutable-state-invariant": "^2.1.0",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.1",
+    "simplebar-react": "^2.4.1",
+    "use-places-autocomplete": "^2.0.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "npm run build:css && react-scripts start",
+    "build": "npm run build:css && react-scripts build",
+    "build-prod": "env-cmd -f .env.prod npm run build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:css": "postcss ./src/infraestructure/ui/assets/styles/tailwind.css -o src/main.css"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "react-hooks/exhaustive-deps": "off",
+      "no-alert": "warn",
+      "prefer-const": "warn",
+      "no-var": "off",
+      "no-trailing-spaces": "warn",
+      "space-before-blocks": "warn",
+      "space-in-parens": "warn",
+      "no-multi-spaces": "warn",
+      "no-duplicate-imports": "warn",
+      "arrow-spacing": "warn",
+      "space-infix-ops": "warn",
+      "no-useless-escape": "off",
+      "comma-dangle": [
+        "warn",
+        {
+          "objects": "always-multiline",
+          "imports": "always-multiline",
+          "exports": "always-multiline",
+          "arrays": "always-multiline"
+        }
+      ],
+      "no-console": [
+        "warn",
+        {
+          "allow": [
+            "error"
+          ]
+        }
+      ]
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.24"
+  }
+}

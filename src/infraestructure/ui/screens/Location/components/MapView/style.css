@@ -1,0 +1,13 @@
+@import url('../../../../../../main.css');
+
+.map__view {
+  @apply h-[70vh];
+}
+
+.map__view .map__view__head {
+  @apply md:bg-white md:opacity-80 md:shadow-[0_0_10px_10px_rgb(255,255,255)];
+}
+
+.map__view .map__view__img {
+  @apply z-[100] relative;
+}

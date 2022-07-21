@@ -1,0 +1,21 @@
+@import url('../../../../../../main.css');
+
+.check {
+  @apply flex items-center justify-between mt-5;
+}
+
+.formyearmonthdate .check {
+  @apply flex items-center justify-between mt-5 md:w-[70%] md:m-auto md:mt-5;
+}
+
+.check .check__checkbox {
+  @apply w-6;
+}
+
+.check .check__checkbox .checkbox {
+  @apply hidden;
+}
+
+.check .check__label {
+  @apply ml-5 font-montserrat leading-4 tracking-wider text-[11px];
+}

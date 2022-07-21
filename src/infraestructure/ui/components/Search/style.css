@@ -1,0 +1,23 @@
+@import url('../../../../main.css');
+
+.search {
+  @apply relative px-5 my-3 flex justify-center items-center md:justify-center  md:px-10 lg:px-20;
+  z-index: 100;
+}
+
+.search .search__input {
+  @apply max-w-[400px] w-full h-10 flex justify-between truncate rounded-[5px] border-[1px] border-solid border-[#9d9d9d];
+}
+
+.search .search__input .search__input__input {
+  @apply pl-[16px] outline-none font-montserrat h-full bg-white border-none;
+  width: calc(100% - 40px);
+}
+
+.search .search__input .search__input__logo {
+  @apply w-[40px] flex justify-center items-center h-full;
+}
+
+.search .search__input .search__input__logo .logo {
+  @apply w-[20px] h-[20px];
+}
